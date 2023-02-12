@@ -41,7 +41,7 @@ main {
 .content {
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: right;
   flex-direction: row;
   justify-content: center;
 }
