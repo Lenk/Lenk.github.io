@@ -54,14 +54,10 @@ the letter container.
 ///////////////////////////////////////////////////////////////////////////////////
 *
 
-window.onload = function() {
-  // find the element that you want to drag.
-  var box = document.getElementById('tile-container');
-  
-  /* listen to the touchMove event,
-  every time it fires, grab the location
-  of touch and assign it to box */
-  
+  window.onload = function() {
+    var box = document.getElementById('tile-container');
+
+
   box.addEventListener('touchmove', function(e) {
     // grab the location of touch
     var touchLocation = e.targetTouches[0];
