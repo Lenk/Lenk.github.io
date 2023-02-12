@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop List</title>
+    <link rel="stylesheet" type="text/css" href="lenk.css">
+  </head>
+  <body>
+    <header>
+      <img src="header-logo.png" alt="Logo">
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <p>Welcome to the Drag and Drop List App</p>
+    </header>
+    <main>
+      <section class="list">
+        <h2>List of Items</h2>
+        <input type="text" id="item-input">
+        <button id="add-item-button">Add Item</button>
+        <ul id="list">
+          <li class="list-item" draggable="true" data-value="1">Item 1</li>
+          <li class="list-item" draggable="true" data-value="2">Item 2</li>
+          <li class="list-item" draggable="true" data-value="3">Item 3</li>
+        </ul>
+      </section>
+      <section class="drop-box">
+        <h2>Drop Box</h2>
+        <ul></ul>
+      </section>
+    </main>
+    <footer>
+      <img id="toggle-button" src="light-mode-icon.png" alt="Toggle Dark/Light Mode">
+      <button id="download-button">Download Data</button>
+    </footer>
+    <script type="text/javascript" src="lenk.js"></script>
+  </body>
+</html>
