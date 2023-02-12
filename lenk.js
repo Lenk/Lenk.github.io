@@ -4,7 +4,6 @@ const toggleButton = document.querySelector("#toggle-button");
 const downloadButton = document.querySelector("#download-button");
 
 list.addEventListener("dragstart", function(event) {
-  event.dataTransfer.setData("text", event.target.
   event.dataTransfer.setData("text", event.target.dataset.value);
 });
 
