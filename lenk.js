@@ -1,5 +1,5 @@
 window.onload = function() {
-  var tile = document.getElementById('.tile');
+  var tile = document.getElementById('letter-container');
 
   tile.addEventListener('touchmove', function(e) {
     // grab the location of touch
