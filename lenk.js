@@ -1,23 +1,23 @@
 window.onload = function() {
-  var box = document.getElementById('letter-container');
+  var tile = document.getElementById('tile');
 
-  box.addEventListener('touchmove', function(e) {
+  tile.addEventListener('touchmove', function(e) {
     // grab the location of touch
     var touchLocation = e.targetTouches[0];
     
     // assign box new coordinates based on the touch.
-    box.style.left = touchLocation.pageX + 'px';
-    box.style.top = touchLocation.pageY + 'px';
+    tile.style.left = touchLocation.pageX + 'px';
+    tile.style.top = touchLocation.pageY + 'px';
   })
   
   /* record the position of the touch
   when released using touchend event.
   This will be the drop position. */
   
-  box.addEventListener('touchend', function(e) {
+  tile.addEventListener('touchend', function(e) {
     // current box position.
-    var x = parseInt(box.style.left);
-    var y = parseInt(box.style.top);
+    var x = parseInt(tile.style.left);
+    var y = parseInt(tile.style.top);
   })
   
 }
