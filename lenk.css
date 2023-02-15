@@ -1,0 +1,46 @@
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.drag-container {
+  flex: 0 0 auto;
+  margin: 2px;
+  width: 50px; min-height: 50px;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.drag-item {
+  width: 100%; height: 25px;
+  transition: box-shadow ease-out 350ms;
+}
+
+.drag-item--touchmove {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.drag-item--red {
+  background-color: red;
+}
+
+.drag-item--blue {
+  background-color: blue;
+}
+
+.drag-item--green {
+  background-color: green;
+}
+
+.drag-over {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.drag-start {
+  background: none;
+}
