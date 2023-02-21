@@ -28,10 +28,10 @@ html {
   display: inline-block;
   padding: 10px;
   border: 1px solid black;
+  gap: 100px;
 }
 
 .drop-container {
-  gap: 100px;
 }
 
 .drag-item {
