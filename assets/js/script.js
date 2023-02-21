@@ -204,3 +204,7 @@ var listItems = document.querySelectorAll('.drag-item');
 [].forEach.call(listItems, function(item) {
   addEventsDragAndDrop(item);
 });
+
+function websiteVisits(response) {
+    document.querySelector("#visits").textContent = response.value;
+}
